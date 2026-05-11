@@ -1,0 +1,10 @@
+-D_KERNEL_MODE 
+-DCMAKE_CXX_COMPILER=clang-cl
+--driver-mode=cl
+-I./ebpf_for_windows/include
+-I/home/ceald/.xwin/sdk/include/ucrt
+-I/home/ceald/.xwin/sdk/include/um
+-I/home/ceald/.xwin/sdk/include/shared
+-I/home/ceald/.xwin/crt/include
+-m64 
+--target=x86_64-pc-windows-msvc
